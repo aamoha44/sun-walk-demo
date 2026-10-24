@@ -1,0 +1,33 @@
+name: Feedback on the demo
+description: First impressions, a question, or an idea. Not tied to one route.
+title: "Feedback: "
+labels: ["demo-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking a look. **This issue is public**, so please don't add anything personal.
+        To comment on a specific route, open it in the map and use **Comment on GitHub** instead: it fills the route in for you.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of feedback?
+      options:
+        - First impressions
+        - Something didn't work
+        - A question
+        - An idea
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Tell me more
+      description: What you tried, what you noticed, what you'd want next.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser (optional)
+      placeholder: "e.g. laptop, Chrome; or iPhone, Safari"

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Guestbook
+    url: https://github.com/aamoha44/sun-walk-demo/discussions
+    about: Say hello, or ask for a code walkthrough.
+  - name: Try the live map
+    url: https://sun-walk-demo.pages.dev/
+    about: The desk demo. No campus visit needed.

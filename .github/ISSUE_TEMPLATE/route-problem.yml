@@ -1,0 +1,59 @@
+# Opened from the map's "Comment on GitHub" button, prefilled by field id
+# (from, to, route, step_free, map_version, problem, where, details: see
+# githubIssueUrl in the app). Also works opened by hand.
+name: Comment on a route
+description: Something about a route the map gave you, good or bad.
+title: "Route: "
+labels: ["route-problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying Sun Walk. If you came from the map, the route is already filled in below: just say what you noticed.
+        **This issue is public.** Please don't add anything personal, and never your location.
+  - type: input
+    id: from
+    attributes:
+      label: From
+      placeholder: "ASU Gammage"
+    validations:
+      required: true
+  - type: input
+    id: to
+    attributes:
+      label: To
+      placeholder: "Noble Library"
+    validations:
+      required: true
+  - type: input
+    id: problem
+    attributes:
+      label: What's this about?
+      description: "For example: blocked or fenced off, stairs, wrong or locked door, took a long way around, or something you liked."
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where on the route?
+      description: A step from the directions, or "Whole route".
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else?
+      description: What you expected, what the map did, or an idea.
+  - type: input
+    id: step_free
+    attributes:
+      label: Accessible route on?
+      description: Filled in by the map (yes / no).
+  - type: input
+    id: route
+    attributes:
+      label: Route id
+      description: Filled in by the map, so the exact route can be looked up.
+  - type: input
+    id: map_version
+    attributes:
+      label: Map version
+      description: Filled in by the map.
